@@ -1,0 +1,4 @@
+'use client';
+import { motion } from 'framer-motion';
+const quotes=['Unsere Firmenkleidung fühlt sich nicht wie Merch an, sondern wie ein echter Teil unserer Marke.','THÈA RA hat aus einem lokalen Auftritt eine klare visuelle Identität gemacht.','Print, Textil und Branding wirken jetzt wie aus einem Guss.'];
+export function TestimonialSlider(){return <div className="luxury-container grid gap-6 md:grid-cols-3">{quotes.map((q,i)=><motion.blockquote initial={{opacity:0,y:22}} whileInView={{opacity:1,y:0}} transition={{delay:i*.1}} viewport={{once:true}} key={q} className="rounded-[1.5rem] border border-cream/10 p-8"><p className="text-2xl leading-9 tracking-tight">“{q}”</p><footer className="mt-8 text-xs uppercase tracking-[.28em] text-sand">Kunde / Duisburg</footer></motion.blockquote>)}</div>}

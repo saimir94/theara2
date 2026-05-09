@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://thea-ra.de/sitemap.xml
